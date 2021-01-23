@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="qr-code-generator">
+	<input type="text" class="qr-url" placeholder="URL or Text">
+	<input type="number" class="qr-size" value="128" min="20" max="500">
+
+	<button class="generate-qr-code">Generate</button>
+
+	<br>
+
+	<div id="qrcode"></div>
+	<a href="" class="downloadBtn" id="downloadBtn" target="_blank" download="image.png"> Download </a>
+</div>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="./qrcode.js"></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
